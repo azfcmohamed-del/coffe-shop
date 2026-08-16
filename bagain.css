@@ -1,0 +1,104 @@
+.title {
+    color: #333;
+    font-size: 2em;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+    width: 100%;
+}
+
+:root{
+    --bg-start: #f6efe6;
+    --bg-end: #efe1d6;
+    --primary: #6b4f3a;
+    --accent: #d9a066;
+    --muted: #7a6a5d;
+    --card-bg: #ffffff;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color: #222;
+    background: linear-gradient(135deg, var(--bg-start), var(--bg-end));
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Make the caffe image half the container width and center it */
+.caffe-image {
+    width: 50%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1.2rem auto;
+    border: 1px solid rgba(107,79,58,0.12);
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    transition: transform 150ms ease-in-out, box-shadow 150ms ease-in-out;
+    -webkit-transition: transform 150ms ease-in-out, box-shadow 150ms ease-in-out;
+    cursor: pointer;
+    transform-origin: center center;
+    background-color: var(--card-bg);
+    object-fit: cover;
+}
+
+.caffe-image:hover,
+.caffe-image:focus {
+    transform: scale(1.03);
+    box-shadow: 0 14px 30px rgba(0,0,0,0.18);
+}
+
+.caffe-image:active {
+    transform: scale(1.06);
+}
+
+.caffe-image:focus {
+    outline: 3px solid rgba(217,160,102,0.18);
+    outline-offset: 4px;
+}
+.start-button {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px 24px;
+    font-size: 1.05rem;
+    background-color: var(--accent);
+    color: #282424;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(107,79,58,0.12);
+    transition: transform 140ms ease, box-shadow 140ms ease;
+}
+
+.start-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 26px rgba(107,79,58,0.14);
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1.6rem;
+}
+
+.muted { color: var(--muted); }
+
+/* Footer styling */
+.site-footer {
+    text-align: center;
+    padding: 1rem 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+
+/* Hero section: center content vertically at half viewport */
+.hero {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 1rem;
+}
+
+.hero .title { margin: 0; }
